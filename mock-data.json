@@ -1,10 +1,48 @@
 {
-    "comments": [
-        { "text": "First comment", "authorId": "a1" },
-        { "text": "Second comment", "authorId": "a2" }
-    ],
-    "authors": [
-        { "id": "a1", "name": "John Doe" },
-        { "id": "a2", "name": "Eddart Stark" }
-    ]
+    "gender":"male",
+    "name":{
+        "title":"Mr",
+        "first":"Tyrone",
+        "last":"Brown"
+    },
+    "location":{
+        "street":{
+            "number":4291,
+            "name":"Daisy Dr"
+        },
+        "city":"Dubbo",
+        "state":"Western Australia",
+        "country":"Australia",
+        "postcode":5834,
+        "coordinates":{
+            "latitude":"-81.4432",
+            "longitude":"-93.3573"
+        },
+        "timezone":{
+            "offset":"+5:00",
+            "description":"Ekaterinburg, Islamabad, Karachi, Tashkent"
+        }
+    },
+    "email":"tyrone.brown@example.com",
+    "login":{
+        "uuid":"f1a625f9-4c10-4f59-bd15-0f56db8a2685",
+        "username":"biggoose154",
+        "password":"snowball",
+        "salt":"qXfc7wLp",
+        "md5":"5b1ddf2888af114327aa823c151888cb",
+        "sha1":"fdb8037542ca1ff6f392bd20db34cda438205a22",
+        "sha256":"3402f5f6da905ce5820f0a8e2efb130a1bfa6b1c6f186b48a3871ed553c5c892"
+    },
+    "dob":{"date":"1995-07-28T22:27:39.267Z","age":25},
+    "registered":{"date":"2007-10-12T14:35:58.954Z","age":13},
+    "phone":"08-7561-4536",
+    "cell":"0454-426-087",
+    "id":{"name":"TFN","value":"415208453"},
+    "picture":{
+        "large":"https://randomuser.me/api/portraits/men/40.jpg",
+        "medium":"https://randomuser.me/api/portraits/med/men/40.jpg",
+        "thumbnail":"https://randomuser.me/api/portraits/thumb/men/40.jpg"
+    },
+    "nat":"AU"
 }
+   

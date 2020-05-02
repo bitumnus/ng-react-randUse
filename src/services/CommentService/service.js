@@ -8,11 +8,7 @@ export default class CommentService {
     }
 
     queryComments() {
-        return this.$http.get(COMMENTS_URI).then((resp) => {
-            console.log(resp.data);
-
-            return this.setComments(resp.data.results);
-        });
+        return this.$http.get(COMMENTS_URI).then((resp) => this.setComments(resp.data.results));
     }
 
     getComments() {
