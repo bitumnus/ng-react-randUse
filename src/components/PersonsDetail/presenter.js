@@ -1,12 +1,13 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const PersonsDetail = (props) => {
     console.log(props);
 
-    const { name, login } = props.person;
+    const { picture, name, id, gender, email, location, dob, registered, phone, cell } = props.person;
     return (
         <div>
-            <p> {login.uuid} </p>
+            <p> {id.name} </p>
             <p> {name.first} {name.last} </p>
         </div>
     );

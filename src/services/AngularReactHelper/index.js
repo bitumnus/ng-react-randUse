@@ -4,8 +4,10 @@ import React from 'react';
 import { mapValues } from 'lodash';
 
 function render(element, Component, props) {
-    ReactDOM.render(
-        <Component { ...props } />,
+    ReactDOM.hydrate(
+        <React.StrictMode>
+            <Component { ...props } />
+        </React.StrictMode>,
         element,
     );
 }

@@ -1,4 +1,4 @@
-const PERSONS_URI = 'https://randomuser.me/api/?page=1&results=10';
+const PERSONS_URI = 'https://randomuser.me/api/?results=200';
 
 export default class PersonService {
 
