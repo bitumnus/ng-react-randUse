@@ -3,12 +3,15 @@
 import angular from 'angular';
 import '@uirouter/angularjs';
 
-const setupRoutes = ($stateProvider) => {
+const setupRoutes = ($stateProvider, $urlRouterProvider) => {
+    $urlRouterProvider.when('', '/');
+    $urlRouterProvider.otherwise('/');
+
     $stateProvider
         .state('home', {
             url: '/',
             template: `
-                <h3>Hello Home!</h3>
+                <h3 class="well">Hello Home!</h3>
             `,
         })
         .state('persons', {
@@ -27,7 +30,7 @@ const setupRoutes = ($stateProvider) => {
         .state('person', {
             url: '/person',
             template: `
-                <div ui-view=""></div>
+                <div class="well" ui-view=""></div>
             `,
         })
         .state('person.uuid', {
@@ -39,9 +42,6 @@ const setupRoutes = ($stateProvider) => {
             controller(persons, $state) {
                 this.person = persons.filter(p => p.login.uuid === $state.params.uuid)[0];
             },
-            // template: `
-            //     <h3>{{$ctrlP.person.name.first}}</h3>
-            // `,
             template: `
                 <persons-detail person="$ctrlP.person"></persons-detail>
             `,

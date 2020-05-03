@@ -1,6 +1,6 @@
 import angular from 'angular';
 import { react2angular } from 'react2angular';
-import PersonsList from './presenter';
+import PersonsList from './PersonsList';
 
 module.exports = angular
     .module('ngReactExample.personsList', [])
