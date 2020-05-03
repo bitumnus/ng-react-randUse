@@ -16,7 +16,7 @@ const PersonsDetail = (props) => {
 
     return (
       <Row gutter={ 16 }>
-        <Col span={ 8 }>
+        <Col span={ 10 }>
           <Card
             style={ { width: 240 } }
             cover={ <img src={ picture.large } alt={ `${name.first}-avatar` } /> }
@@ -27,15 +27,22 @@ const PersonsDetail = (props) => {
               />
           </Card>
         </Col>
-        <Col span={ 8 }>
+        <Col span={ 10 }>
           <Card>
             <p><strong>Gender:</strong> { gender }</p>
-            <p><strong>Email:</strong> { email }</p>
-            <p><strong>Location:</strong> { locationStr }</p>
-            <p><strong>Date of Birth: </strong> { moment(dob.date).format('MM.DD.YYYY') } </p>
+            <hr />
             <p><strong>Age:</strong> { dob.age } </p>
+            <hr />
+            <p><strong>Email:</strong> { email }</p>
+            <hr />
+            <p><strong>Location:</strong> { locationStr }</p>
+            <hr />
+            <p><strong>Date of Birth: </strong> { moment(dob.date).format('MM.DD.YYYY') } </p>
+            <hr />
             <p><strong>Registered:</strong> { moment(registered.date).format('MM.DD.YYYY') } </p>
+            <hr />
             <p><strong>Phone:</strong> { phone }</p>
+            <hr />
             <p><strong>Cell:</strong> { cell }</p>
           </Card>
         </Col>

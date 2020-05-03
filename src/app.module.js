@@ -5,7 +5,7 @@ import '@uirouter/angularjs';
 
 const setupRoutes = ($stateProvider, $urlRouterProvider) => {
     $urlRouterProvider.when('', '/');
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/home');
 
     $stateProvider
         .state('home', {
@@ -13,6 +13,10 @@ const setupRoutes = ($stateProvider, $urlRouterProvider) => {
             template: `
                 <h3 class="well">Hello Home!</h3>
             `,
+        })
+        .state('about', {
+            url: '/about',
+            templateUrl: 'persons.html',
         })
         .state('persons', {
             url: '/persons',
@@ -52,7 +56,7 @@ const enableHtml5Mode = ($locationProvider) => {
     $locationProvider.html5Mode({ enabled: true });
 };
 
-module.exports = angular.module('ngReactExample', [
+module.exports = angular.module('ngReact', [
     require('@uirouter/angularjs'),
     require('./services/CommentService').name,
     require('./services/PersonService').name,

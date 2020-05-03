@@ -3,7 +3,7 @@ import { react2angular } from 'react2angular';
 import PersonsList from './PersonsList';
 
 module.exports = angular
-    .module('ngReactExample.personsList', [])
+    .module('ngReact.personsList', [])
     .component('personsList', react2angular(PersonsList));
 
 // decide use two methods for migrate React Component to AngularJS
