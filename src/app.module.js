@@ -16,7 +16,7 @@ const setupRoutes = ($stateProvider, $urlRouterProvider) => {
         })
         .state('about', {
             url: '/about',
-            templateUrl: 'persons.html',
+            template: '<about></about>',
         })
         .state('persons', {
             url: '/persons',
@@ -58,10 +58,10 @@ const enableHtml5Mode = ($locationProvider) => {
 
 module.exports = angular.module('ngReact', [
     require('@uirouter/angularjs'),
-    require('./services/CommentService').name,
     require('./services/PersonService').name,
     require('./components/PersonsList').name,
     require('./components/PersonsDetail').name,
+    require('./components/About').name,
 ])
     .config(enableHtml5Mode)
     .config(setupRoutes);

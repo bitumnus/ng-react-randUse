@@ -16,7 +16,8 @@ const PersonsDetail = (props) => {
 
     return (
       <Row gutter={ 16 }>
-        <Col span={ 10 }>
+        <Col span={ 3 } />
+        <Col span={ 8 }>
           <Card
             style={ { width: 240 } }
             cover={ <img src={ picture.large } alt={ `${name.first}-avatar` } /> }
