@@ -14,7 +14,7 @@
   "dependencies": {
     "@uirouter/angularjs": "^0.3.2",
     "@uirouter/react": "^1.0.3",
-    "angular": "^1.6.1",
+    "angular": "^1.8.3",
     "antd": "^4.2.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-import": "^1.13.0",
